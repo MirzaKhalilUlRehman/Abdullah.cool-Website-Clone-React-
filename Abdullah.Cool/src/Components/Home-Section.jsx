@@ -20,18 +20,20 @@ function HomeSection() {
           I know the craft deeply, and I use AI to move twice as fast.
         </p>
         <button className="book-call-btn">
-          Book a Free Call{" "}
+          Book a Free Call
           <span className="icon-box">
             <FaArrowRight />
           </span>
         </button>
         <button className="project-btn">
-          {" "}
           <span className="icon-box">
             <FaFolder />
           </span>
           See Project
         </button>
+        <br />
+        <div className="data">
+
         <div className="project-data">
           20+ <small>Projects shipped</small>
         </div>
@@ -41,15 +43,21 @@ function HomeSection() {
         <div className="craft-data">
           7+ <small>Years of Craft</small>
         </div>
+        </div>
       </div>
+      <div className="brd"></div>
       <div className="hero-avtar">
         <div className="avtar">
           <img src="https://www.abdullah.cool/my-pic-transparent.png" alt="Abdullah" />
         </div>
         <div className="avtar-about">
+            <div className="about-data">
           <h4>Muhammad Abdullah</h4>
           <p>Full-Stack Developer</p>
-          <a href="mailto:abdullah@example.com"> <IoSendOutline size={22} /></a>
+          </div>
+          <div className="mail-icon">
+          <a href="mailto:abdullah@example.com"> <span className="icon-box"><IoSendOutline size={30} /></span></a>
+          </div>
         </div>
       </div>
     </section>

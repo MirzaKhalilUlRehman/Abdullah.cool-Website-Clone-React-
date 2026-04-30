@@ -83,30 +83,33 @@ body {
   padding: 2px;
   opacity: 0.8;
 }
-/* ---- HERO SECTION WRAPPER ---- */
 .hero-section {
   display: flex;
   justify-content: space-between;
-
   width: 1160px;
   height: 524px;
   padding: 32px;
-  margin: 40px auto;
   max-width: 1400px;
-
   position: relative;
   top: 150px;
-
-  background: linear-gradient(to bottom right, #78101f, #f2ede7);
-
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  left: 175px;
+  background: linear-gradient(
+    135deg,
+    lab(97 2.73 4.15) 0%,
+    lab(100% 0.01 -0.01 / 0.641) 35%,
+    lab(100% 0.01 -0.01) 70%,
+    lab(97.58% 0.01 -0.01 / 0.775) 100%
+  );
   border-radius: 30px;
 
-  box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.06),
-    0 0 0 6px rgba(255, 255, 255, 0.6);
-}
+  border: 1px solid rgba(255, 255, 255, 0.25);
 
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    0 0 0 5px rgba(255, 255, 255, 0.65);
+
+  overflow: hidden;
+}
 /* ---- LEFT CONTENT ---- */
 .hero-content {
   width: 820px;
@@ -117,49 +120,49 @@ body {
   display: inline-flex;
   align-items: center;
   background: #fff;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 30px;
-  font-size: 14px;
-  font-weight: 500;
-  gap: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  font-size: 12px;
+  font-weight: 600;
+  gap: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .available .geen {
-  width: 10px;
-  height: 10px;
-  background: #1fd16c;
+  width: 8px;
+  height: 8px;
+  background: #00c950;
   border-radius: 50%;
 }
 
 /* Main Heading */
 .hero-content h1 {
-  font-size: 64px;
-  line-height: 1.1;
-  font-weight: 800;
-  margin: 30px 0 20px;
+  font-size: 54px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 30px 0;
   color: #000;
 }
 
 .hero-content h1 span {
-  color: #ff6a00;
+  color: #ff6f14;
 }
 
 /* Paragraph */
 .hero-content p {
   max-width: 650px;
-  font-size: 17px;
-  color: #555;
-  line-height: 1.65;
-  margin-bottom: 30px;
+  font-size: 15px;
+  color: #787878;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* ---- BUTTONS ---- */
 .book-call-btn,
 .project-btn {
-  padding: 14px 28px;
+  padding: 15px 20px;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -167,12 +170,12 @@ body {
   border: none;
   margin-right: 15px;
   transition: 0.2s;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .book-call-btn {
   background: #000;
-  color: white;
+  color: rgba(231, 226, 226, 0.855);
 }
 
 .book-call-btn:hover {
@@ -180,17 +183,12 @@ body {
 }
 
 .project-btn {
+    font-weight: 500;
   background: white;
   border: 1px solid #ddd;
 }
-
-.project-btn:hover {
-  background: #f7f7f7;
-}
-
-.icon-box {
-  display: flex;
-  align-items: center;
+.project-btn .icon-box {
+    color: rgba(0, 0, 0, 0.421);
 }
 
 /* ---- STATS ---- */
@@ -198,57 +196,88 @@ body {
 .client-data,
 .craft-data {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 10px;
   margin-top: 50px;
-  font-size: 24px;
+  font-size: 20px;
+padding-right: 10px;
   font-weight: 700;
+  border-right: 1px solid #ddd;
 }
-
+.data{
+    width: 360px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;}
+.craft-data{
+    border-right: none;
+}
 .project-data small,
 .client-data small,
 .craft-data small {
   display: block;
-  font-size: 15px;
-  color: #555;
-  font-weight: 400;
+  font-size: 10px;
+  color: #787878;
+  font-weight: 300;
 }
 
 /* ---- RIGHT SIDE AVATAR ---- */
 .hero-avtar {
-  width: 340;
+  width: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-left: 1px solid black;
+  position: relative;
+  top: 80px;
+  height: 100%;
+  right: 5px;
+}
+.brd{
+    width: 1px;
+    height: 100%;
+    background: black;
 }
 
 .avtar {
-  background: #ff7f32;
-  padding: 25px;
+  background: lab(70 41.33 57.68);
+  padding: 20px;
+  width: 250px;
+  height: 250px;
   border-radius: 25px;
+  position: relative;
   overflow: hidden;
 }
 
 .avtar img {
   width: 280px;
   border-radius: 12px;
+    position: absolute;
+    bottom: -90px;
+    right: -20px;
+    border: 2px solid white;
 }
 
 /* Avatar About Card */
 .avtar-about {
   background: white;
-  padding: 20px 25px;
+  padding: 20px 20px;
   margin-top: 20px;
   border-radius: 20px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
   text-align: left;
-  width: 100%;
+  width: 275px;
+  height: 75px;
 }
-
+.avtar-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .avtar-about h4 {
-  font-size: 22px;
-  margin: 0;
-  font-weight: 700;
+  font-size: 16px;
+  margin-top:15px ;
+  font-weight: 600;
 }
 
 .avtar-about p {
@@ -261,4 +290,9 @@ body {
   color: #000;
   display: inline-flex;
   align-items: center;
+}
+.mail-icon .icon-box{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.512);
+    transform: rotate(30deg);
 }
