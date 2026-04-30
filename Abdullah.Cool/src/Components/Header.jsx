@@ -8,7 +8,7 @@ function Header() {
           <img src={logo} alt="logo" />
         </div>
         <div className="links">
-          <a href="#home">Home</a>
+          <a href="#hero-section">Home</a>
           <a href="#tech-stack">Tech Stack</a>
           <a href="#projects">Projects</a>
           <a href="#services">Services</a>

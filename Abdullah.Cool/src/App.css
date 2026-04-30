@@ -1,3 +1,5 @@
+/* -------------------- GLOBAL RESET -------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,27 +11,26 @@ body {
   background-color: #f6f6f6;
 }
 
+/* -------------------- HEADER -------------------- */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 900px;
   height: 65px;
   padding: 0 24px;
-
   position: fixed;
   top: 22px;
   left: 50%;
-  z-index: 1;
   transform: translateX(-50%);
-
+  z-index: 1;
   background-color: lab(98 0.02 0);
   border: 1px solid rgba(0, 0, 0, 0.107);
   border-radius: 22px;
-box-shadow:
-  0 0 0 4px #fff,
-  0 4px 16px rgba(0,0,0,0.06);
+  box-shadow:
+    0 0 0 4px #fff,
+    0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .logo img {
@@ -70,6 +71,7 @@ box-shadow:
   cursor: pointer;
   opacity: 0.9;
 }
+
 .icon-box {
   display: flex;
   align-items: center;
@@ -82,6 +84,9 @@ box-shadow:
   padding: 2px;
   opacity: 0.8;
 }
+
+/* -------------------- HERO SECTION -------------------- */
+
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -100,19 +105,19 @@ box-shadow:
     lab(96.88% 2.67 4.19 / 0.147) 100%
   );
   border-radius: 30px;
-
   border: 1px solid rgba(0, 0, 0, 0.301);
-box-shadow:
-  0 0 0 4px #fff,
-  0 4px 16px rgba(0,0,0,0.06);
+  box-shadow:
+    0 0 0 4px #fff,
+    0 4px 16px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
-/* ---- LEFT CONTENT ---- */
+
 .hero-content {
   width: 820px;
 }
 
-/* Available Now */
+/* Available Now Badge */
+
 .available {
   display: inline-flex;
   align-items: center;
@@ -132,7 +137,8 @@ box-shadow:
   border-radius: 50%;
 }
 
-/* Main Heading */
+/* Hero Heading */
+
 .hero-content h1 {
   font-size: 54px;
   line-height: 1.2;
@@ -145,7 +151,8 @@ box-shadow:
   color: #ff6f14;
 }
 
-/* Paragraph */
+/* Hero Paragraph */
+
 .hero-content p {
   max-width: 650px;
   font-size: 15px;
@@ -154,7 +161,8 @@ box-shadow:
   margin-bottom: 20px;
 }
 
-/* ---- BUTTONS ---- */
+/* Buttons */
+
 .book-call-btn,
 .project-btn {
   padding: 15px 20px;
@@ -180,15 +188,16 @@ box-shadow:
 }
 
 .project-btn {
-    font-weight: 500;
   background: white;
   border: 1px solid #ddd;
 }
+
 .project-btn .icon-box {
-    color: rgba(0, 0, 0, 0.421);
+  color: rgba(0, 0, 0, 0.421);
 }
 
-/* ---- STATS ---- */
+/* Stats Section */
+
 .project-data,
 .client-data,
 .craft-data {
@@ -196,19 +205,23 @@ box-shadow:
   margin-right: 10px;
   margin-top: 50px;
   font-size: 20px;
-padding-right: 10px;
+  padding-right: 10px;
   font-weight: 700;
   border-right: 1px solid #ddd;
 }
-.data{
-    width: 360px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;}
-.craft-data{
-    border-right: none;
+
+.data {
+  width: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 }
+
+.craft-data {
+  border-right: none;
+}
+
 .project-data small,
 .client-data small,
 .craft-data small {
@@ -218,7 +231,8 @@ padding-right: 10px;
   font-weight: 300;
 }
 
-/* ---- RIGHT SIDE AVATAR ---- */
+/* -------------------- AVATAR SECTION -------------------- */
+
 .hero-avtar {
   width: 340px;
   display: flex;
@@ -226,13 +240,14 @@ padding-right: 10px;
   align-items: center;
   position: relative;
   top: 80px;
-  height: 100%;
   right: 5px;
+  height: 100%;
 }
-.brd{
-    width: 1px;
-    height: 100%;
-    background: black;
+
+.brd {
+  width: 1px;
+  height: 100%;
+  background: black;
 }
 
 .avtar {
@@ -248,32 +263,32 @@ padding-right: 10px;
 .avtar img {
   width: 280px;
   border-radius: 12px;
-    position: absolute;
-    bottom: -90px;
-    right: -20px;
-    border: 2px solid white;
+  position: absolute;
+  bottom: -90px;
+  right: -20px;
+  border: 2px solid white;
 }
 
-/* Avatar About Card */
+/* Avatar About Box */
+
 .avtar-about {
   background: white;
   padding: 20px 20px;
   margin-top: 20px;
   border-radius: 20px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
-  text-align: left;
   width: 275px;
   height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
 }
-.avtar-about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
+
 .avtar-about h4 {
   font-size: 16px;
-  margin-top:15px ;
+  margin-top: 15px;
   font-weight: 600;
 }
 
@@ -288,8 +303,9 @@ padding-right: 10px;
   display: inline-flex;
   align-items: center;
 }
-.mail-icon .icon-box{
-    font-size: 10px;
-    color: rgba(0, 0, 0, 0.512);
-    transform: rotate(30deg);
+
+.mail-icon .icon-box {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.512);
+  transform: rotate(-30deg);
 }
