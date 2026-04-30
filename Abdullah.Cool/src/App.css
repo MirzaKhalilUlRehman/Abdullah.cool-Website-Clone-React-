@@ -27,10 +27,9 @@ body {
   background-color: lab(98 0.02 0);
   border: 1px solid rgba(0, 0, 0, 0.107);
   border-radius: 22px;
-
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.04),
-    0 0 0 4px rgba(255, 255, 255, 0.838);
+box-shadow:
+  0 0 0 4px #fff,
+  0 4px 16px rgba(0,0,0,0.06);
 }
 
 .logo img {
@@ -96,18 +95,16 @@ body {
   background: linear-gradient(
     135deg,
     lab(97 2.73 4.15) 0%,
-    lab(100% 0.01 -0.01 / 0.641) 35%,
+    lab(100% 0.01 -0.01) 35%,
     lab(100% 0.01 -0.01) 70%,
-    lab(97.58% 0.01 -0.01 / 0.775) 100%
+    lab(96.88% 2.67 4.19 / 0.147) 100%
   );
   border-radius: 30px;
 
-  border: 1px solid rgba(255, 255, 255, 0.25);
-
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.08),
-    0 0 0 5px rgba(255, 255, 255, 0.65);
-
+  border: 1px solid rgba(0, 0, 0, 0.301);
+box-shadow:
+  0 0 0 4px #fff,
+  0 4px 16px rgba(0,0,0,0.06);
   overflow: hidden;
 }
 /* ---- LEFT CONTENT ---- */
