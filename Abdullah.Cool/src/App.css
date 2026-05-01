@@ -1,5 +1,3 @@
-/* -------------------- GLOBAL RESET -------------------- */
-
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +8,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f6f6f6;
 }
-
-/* -------------------- HEADER -------------------- */
 
 .header {
   display: flex;
@@ -26,11 +22,9 @@ body {
   transform: translateX(-50%);
   border-radius: 22px;
   z-index: 1;
-background: linear-gradient(to bottom, white, #f1f1f1);
+  background: linear-gradient(to bottom, white, #f1f1f1);
   border: 1px solid rgba(0, 0, 0, 0.107);
-  box-shadow:
-    0 0 0 4px #fff,
-    0 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 0 4px #fff, 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .logo img {
@@ -85,8 +79,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   opacity: 0.8;
 }
 
-/* -------------------- HERO SECTION -------------------- */
-
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -98,26 +90,16 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   top: 150px;
   margin-bottom: 150px;
   left: 175px;
-  background: linear-gradient(
-    135deg,
-    lab(97 2.73 4.15) 0%,
-    lab(100% 0.01 -0.01) 35%,
-    lab(100% 0.01 -0.01) 70%,
-    lab(96.88% 2.67 4.19 / 0.147) 100%
-  );
+  background: linear-gradient(135deg, lab(97 2.73 4.15) 0%, lab(100% 0.01 -0.01) 35%, lab(100% 0.01 -0.01) 70%, lab(96.88% 2.67 4.19 / 0.147) 100%);
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.301);
-  box-shadow:
-    0 0 0 4px #fff,
-    0 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 0 4px #fff, 0 4px 16px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
 
 .hero-content {
   width: 820px;
 }
-
-/* Available Now Badge */
 
 .available {
   display: inline-flex;
@@ -138,8 +120,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   border-radius: 50%;
 }
 
-/* Hero Heading */
-
 .hero-content h1 {
   font-size: 54px;
   line-height: 1.2;
@@ -152,8 +132,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   color: #ff6f14;
 }
 
-/* Hero Paragraph */
-
 .hero-content p {
   max-width: 650px;
   font-size: 15px;
@@ -161,8 +139,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
-/* Buttons */
 
 .book-call-btn,
 .project-btn {
@@ -197,8 +173,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   color: rgba(0, 0, 0, 0.421);
 }
 
-/* Stats Section */
-
 .project-data,
 .client-data,
 .craft-data {
@@ -231,8 +205,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   color: #787878;
   font-weight: 300;
 }
-
-/* -------------------- AVATAR SECTION -------------------- */
 
 .hero-avtar {
   width: 340px;
@@ -269,8 +241,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   right: -20px;
   border: 2px solid white;
 }
-
-/* Avatar About Box */
 
 .avtar-about {
   background: white;
@@ -310,15 +280,13 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   color: rgba(0, 0, 0, 0.512);
   transform: rotate(-30deg);
 }
-
 .tech-stack {
   width: 100%;
-  padding: 100px 0;
+  padding: 60px 0; /* reduced from 100px */
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
-/* ---- TEXT STYLING ---- */
 .stack-content p:first-child {
   color: #999999aa;
   font-size: 12px;
@@ -344,14 +312,15 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   line-height: 1.5;
   margin-bottom: 10px;
 }
+
 .stack-cards::before,
 .stack-cards::after {
   content: "";
   position: absolute;
   top: 0;
-  width: 120px;          /* fade width */
+  width: 120px;
   height: 100%;
-  pointer-events: none;  /* hover does NOT affect scrolling */
+  pointer-events: none;
   z-index: 5;
 }
 
@@ -365,14 +334,12 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   background: linear-gradient(to left, rgba(249, 249, 249, 0.544), #f9f9f900);
 }
 
-/* ---- CARD TRACK WRAPPER ---- */
 .stack-cards {
   margin-top: 50px;
   overflow: hidden;
   position: relative;
 }
 
-/* ---- COMMON TRACK STYLE ---- */
 .track {
   display: flex;
   width: max-content;
@@ -381,17 +348,14 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   will-change: transform;
 }
 
-/* ---- LEFT MOVING ROW ---- */
 .track-left {
   animation: scroll-left 30s linear infinite;
 }
 
-/* ---- RIGHT MOVING ROW ---- */
 .track-right {
   animation: scroll-right 30s linear infinite;
 }
 
-/* ---- INDEPENDENT HOVER-PAUSE ---- */
 .track-left:hover {
   animation-play-state: paused;
 }
@@ -400,7 +364,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   animation-play-state: paused;
 }
 
-/* ---- CARD STYLE ---- */
 .card {
   display: flex;
   align-items: center;
@@ -412,13 +375,10 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   font-size: 16px;
   background: linear-gradient(to bottom, white, #f1f1f1);
   border: 1px solid rgba(0, 0, 0, 0.107);
-  box-shadow:
-    0 0 0 4px #fff,
-    0 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 0 4px #fff, 0 4px 16px rgba(0, 0, 0, 0.06);
   transition: 0.3s ease;
 }
 
-/* ---- ICON SIZE FIX ---- */
 .card img {
   width: 32px;
   height: 32px;
@@ -426,67 +386,180 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   display: block;
 }
 
-
-
-/* ---- ANIMATIONS ---- */
 @keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes scroll-right {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
+/* SECTION */
 .project-section {
   width: 100%;
-  padding: 110px 0 80px 0;
-  background: #f7f7f7; /* matches screenshot */
+  padding: 80px 0 100px;
+  background: #f3f3f3;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* HEADER */
 .project-content {
   max-width: 700px;
+  text-align: center;
 }
 
-/* ---- PROJECTS LABEL ---- */
 .project-content p:first-child {
-  color: #8e8e99;
+  color: #9a9a9a;
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   margin-bottom: 16px;
 }
 
-/* ---- HEADING ---- */
 .project-content h4 {
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: lab(8 0.59 -12.28); /* dark navy like screenshot */
-  margin-bottom: 22px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #111;
 }
 
 .project-content h4 span {
-  color: lab(65 53.77 69.98); /* exact orange from image */
-  font-style: italic;
+  color: #ff7a18;
+  font-weight: 700;
 }
 
-/* ---- SUBTEXT ---- */
 .project-content p {
-  color: #687482;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 400;
+  color: #6b7280;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* 🔥 EACH PROJECT BOX */
+.projects {
+  width: 1160px;
+  margin-top: 80px; /* spacing between projects */
+  padding: 20px;
+  border-radius: 28px;
+
+  background: linear-gradient(to bottom, white, #f1f1f1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 4px #fff, 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* CARD */
+.project1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 24px;
+}
+
+/* LEFT */
+.project-details {
+  width: 40%;
+}
+
+/* TAGS */
+.node1,
+.node2,
+.node3 {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* COLORS */
+.node1 {
+  color: #ff6a00;
+  border: 1px solid #ff6a00;
+  background: rgba(255, 106, 0, 0.08);
+}
+
+.node2 {
+  color: #00bfa6;
+  border: 1px solid #00bfa6;
+  background: rgba(0, 191, 166, 0.08);
+}
+
+.node3 {
+  color: #4a8dff;
+  border: 1px solid #4a8dff;
+  background: rgba(74, 141, 255, 0.08);
+}
+
+/* TITLE */
+.project-details h3 {
+  font-size: 38px;
+  margin-bottom: 18px;
+  line-height: 1.2;
+  color: #111;
+}
+
+/* DESCRIPTION */
+.project-details p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* BUTTON */
+.project-details button {
+  width: 100%;
+  margin-top: 35px;
+  padding: 16px 26px;
+  border-radius: 14px;
+  border: 1px solid black;
+  background: transparent;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-details button:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* RIGHT */
+.project-img {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGE BOX */
+.img-container {
+  background-color: #ff8c42;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.img-container img {
+  width: 480px;
+  border-radius: 12px;
+  display: block;
+}
+button .view-more{
+  width: 150px;
+  background-color: #f5f5f5;
+  padding: 40px;
+  margin: 20px;
+
+
 }
