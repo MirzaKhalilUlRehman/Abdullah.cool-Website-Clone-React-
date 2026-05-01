@@ -1,20 +1,20 @@
-import html from '../assets/images/html.png';
-import css from '../assets/images/css.jpg';
-import tailwind from '../assets/images/tailwind.png';
-import bootstrap from '../assets/images/bootstrap.jpg';
-import react from '../assets/images/react.jpg';
-import nextjs from '../assets/images/nextjs.png';
-import reactnative from '../assets/images/react.jpg';
-import expo from '../assets/images/expo.png';
-import figma from '../assets/images/figma.png';
-import firebase from '../assets/images/firebase.jpg';
-import appwrite from '../assets/images/appwrite.png';
-import supabase from '../assets/images/supabase.jpg';
-import chakra from '../assets/images/chakra.jpg';
-import shadcn from '../assets/images/shadcn.png';
-import zustand from '../assets/images/zustand.jpg';
-import reactquery from '../assets/images/reactquery.jpg';
-import claude from '../assets/images/claude.jpg';
+import html from '../assets/images/icons/html.png';
+import css from '../assets/images/icons/css.jpg';
+import tailwind from '../assets/images/icons/tailwind.png';
+import bootstrap from '../assets/images/icons/bootstrap.jpg';
+import react from '../assets/images/icons/react.jpg';
+import nextjs from '../assets/images/icons/nextjs.png';
+import reactnative from '../assets/images/icons/react.jpg';
+import expo from '../assets/images/icons/expo.png';
+import figma from '../assets/images/icons/figma.png';
+import firebase from '../assets/images/icons/firebase.jpg';
+import appwrite from '../assets/images/icons/appwrite.png';
+import supabase from '../assets/images/icons/supabase.jpg';
+import chakra from '../assets/images/icons/chakra.jpg';
+import shadcn from '../assets/images/icons/shadcn.png';
+import zustand from '../assets/images/icons/zustand.jpg';
+import reactquery from '../assets/images/icons/reactquery.jpg';
+import claude from '../assets/images/icons/claude.jpg';
 
 function TechStack() {
 

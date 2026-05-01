@@ -446,3 +446,47 @@ background: linear-gradient(to bottom, white, #f1f1f1);
     transform: translateX(0);
   }
 }
+.project-section {
+  width: 100%;
+  padding: 110px 0 80px 0;
+  background: #f7f7f7; /* matches screenshot */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-content {
+  max-width: 700px;
+}
+
+/* ---- PROJECTS LABEL ---- */
+.project-content p:first-child {
+  color: #8e8e99;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+/* ---- HEADING ---- */
+.project-content h4 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: lab(8 0.59 -12.28); /* dark navy like screenshot */
+  margin-bottom: 22px;
+}
+
+.project-content h4 span {
+  color: lab(65 53.77 69.98); /* exact orange from image */
+  font-style: italic;
+}
+
+/* ---- SUBTEXT ---- */
+.project-content p {
+  color: #687482;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
