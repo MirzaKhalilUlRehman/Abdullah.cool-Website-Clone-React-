@@ -774,7 +774,7 @@ border: 1px solid #ff6a00;
 
 /* ICON EFFECT */
 .service-row:hover .icon-container {
-  background: #ff7a18;
+  background: lab(64 53.13 69.31);
   color: #fff;
 
   transform: rotate(5deg);
@@ -793,5 +793,8 @@ border: 1px solid #ff6a00;
 /* BIG NUMBER MOVE + COLOR */
 .service-row:hover .service-number {
   transform: translateX(-20px);
-  color: rgba(255, 122, 24, 0.15);
+  right: -70px;
+  bottom:-70px;
+  opacity: .7;
+  color:lab(64 53.13 69.31) ;
 }
