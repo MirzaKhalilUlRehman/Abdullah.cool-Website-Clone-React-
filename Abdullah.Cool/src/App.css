@@ -569,4 +569,229 @@ body {
 .view-more:hover {
 color: #ff6a00;
 border: 1px solid #ff6a00;
+}/* ================= SECTION ================= */
+
+.services-section {
+  width: 100%;
+  padding: 80px 0 100px;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================= HEADER ================= */
+
+.services-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.services-content p:first-child {
+  color: #9a9a9a;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.services-content h4 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.services-content h4 span {
+  color: #ff7a18;
+  font-weight: 700;
+}
+
+.services-content p {
+  color: #6b7280;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 80px;
+}
+
+/* ================= CONTAINER ================= */
+
+.services-container {
+  width: 1100px;
+
+  background: linear-gradient(to bottom, white, #f1f1f1);
+  border-radius: 28px;
+
+  border: 1px solid rgba(0, 0, 0, 0.107);
+  box-shadow: 0 0 0 4px #fff, 0 4px 16px rgba(0, 0, 0, 0.06);
+
+  overflow: hidden;
+}
+
+/* ================= ROW ================= */
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+.service-row:last-child {
+  border-bottom: none;
+}
+
+/* ================= LEFT ================= */
+
+.service-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  background: #0f172a;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.service-text h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.service-text p {
+  color: #6b7280;
+  font-size: 15px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* ================= RIGHT ================= */
+
+.service-right {
+  text-align: right;
+  position: relative;
+}
+
+/* ================= TAGS (UPDATED EXACT STYLE) ================= */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+
+  transition: all 0.25s ease;
+}
+
+/* hover tags */
+.service-row:hover .tags span {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.08);
+  color: #374151;
+}
+
+/* ================= BIG NUMBER ================= */
+
+.service-number {
+  position: absolute;
+  right: -50px;
+  bottom: -90px;
+
+  font-size: 80px;
+  font-weight: 700;
+
+  color: rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+/* background */
+.service-row:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* LEFT ORANGE BORDER */
+.service-row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: transparent;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.service-row:hover::before {
+  background: #ff7a18;
+}
+
+/* ICON EFFECT */
+.service-row:hover .icon-container {
+  background: #ff7a18;
+  color: #fff;
+
+  transform: rotate(5deg);
+
+  box-shadow: 0 0 0 4px rgba(149, 144, 144, 0.3),
+              0 4px 16px rgba(0, 0, 0, 0.06);
+}
+.tags {
+  display: grid;
+  text-align: left;
+  align-items: last baseline;
+  grid-template-columns: repeat(3, max-content);
+  gap: 8px;
+  justify-content: end;
+}
+/* BIG NUMBER MOVE + COLOR */
+.service-row:hover .service-number {
+  transform: translateX(-20px);
+  color: rgba(255, 122, 24, 0.15);
 }
