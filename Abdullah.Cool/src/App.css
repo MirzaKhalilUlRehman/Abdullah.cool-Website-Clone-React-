@@ -24,10 +24,10 @@ body {
   top: 22px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
-  background-color: lab(98 0.02 0);
-  border: 1px solid rgba(0, 0, 0, 0.107);
   border-radius: 22px;
+  z-index: 1;
+background: linear-gradient(to bottom, white, #f1f1f1);
+  border: 1px solid rgba(0, 0, 0, 0.107);
   box-shadow:
     0 0 0 4px #fff,
     0 4px 16px rgba(0, 0, 0, 0.06);
@@ -96,6 +96,7 @@ body {
   max-width: 1400px;
   position: relative;
   top: 150px;
+  margin-bottom: 150px;
   left: 175px;
   background: linear-gradient(
     135deg,
@@ -308,4 +309,102 @@ body {
   font-size: 10px;
   color: rgba(0, 0, 0, 0.512);
   transform: rotate(-30deg);
+}
+
+
+
+
+
+
+
+
+
+
+.tech-stack {
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.stack-content p:first-child {
+  color: #999999aa;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.stack-content h2 {
+  color: lab(8 0.59 -12.28);
+  font-size: 50px;
+  font-weight: 700;
+  margin: 24px 0;
+}
+
+.stack-content h2 span {
+  color: lab(65 53.77 69.98);
+}
+
+.stack-content p:last-child {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.stack-cards {
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards-section-1,
+.cards-section-2 {
+  display: flex;
+  gap: 22px;
+  padding: 18px 0;
+  animation: slide-left 22s linear infinite;
+}
+
+.cards-section-2 {
+  animation: slide-right 22s linear infinite;
+}
+
+/* CARD STYLING */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 18px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s ease;
+  background: linear-gradient(to bottom, white, #f1f1f1);
+  border: 1px solid rgba(0, 0, 0, 0.107);
+  box-shadow:
+    0 0 0 4px #fff,
+    0 4px 16px rgba(0, 0, 0, 0.06);
+
+}
+
+.card img {
+  width: 32px;
+}
+
+.cards-section-1:hover,
+.cards-section-2:hover {
+  animation-play-state: paused;
+}
+/* Animations */
+
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes slide-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
