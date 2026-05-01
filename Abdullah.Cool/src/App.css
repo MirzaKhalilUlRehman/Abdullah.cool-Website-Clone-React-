@@ -555,11 +555,18 @@ body {
   border-radius: 12px;
   display: block;
 }
-button .view-more{
-  width: 150px;
-  background-color: #f5f5f5;
-  padding: 40px;
-  margin: 20px;
+.view-more {
+  margin-top: 60px;
+  padding: 16px 32px;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.714);
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-
+.view-more:hover {
+color: #ff6a00;
+border: 1px solid #ff6a00;
 }

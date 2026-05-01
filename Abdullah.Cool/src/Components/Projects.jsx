@@ -1,8 +1,17 @@
+import { useState } from "react";
+
 import project1 from "../assets/images/project-images/project1.webp";
 import project2 from "../assets/images/project-images/project2.webp";
 import project3 from "../assets/images/Project-images/project3.webp";
 import project4 from "../assets/images/Project-images/project4.webp";
+import project5 from "../assets/images/project-images/project5.webp";
+import project6 from "../assets/images/project-images/project6.webp";
+import project7 from "../assets/images/Project-images/project7.webp";
+import project8 from "../assets/images/Project-images/project8.webp";
+
 function Projects() {
+  const [count, setCount] = useState(4);
+
   const projectsData = [
     {
       id: 1,
@@ -32,6 +41,34 @@ function Projects() {
       desc: "Built a cross-platform React Native app for HVAC field workers to manage jobs, log time, track attendance, and capture digital signatures — all synced with the ERP in real time.",
       img: project4,
     },
+    {
+      id: 5,
+      nodes: ["Healthcare", "React Native", "Mobile App"],
+      title: "Rauha — Mental Health Therapy App",
+      desc: "Led React Native development of a CBT-based therapy app from scratch to production on both App Store and Play Store — delivering structured 8-week programs, journaling, real-time chat, and certified accessibility.",
+      img: project5,
+    },
+    {
+      id: 6,
+      nodes: ["Next.js", "Admin Dashboard", "Web App"],
+      title: "Catering Kvatrić — Booking & Sales Dashboard",
+      desc: "Led frontend development of a Next.js admin dashboard managing the full inquiry-to-reservation lifecycle for an enterprise catering operation — with role-based access, payment-triggered workflows, and Google Maps integration.",
+      img: project6,
+    },
+    {
+      id: 7,
+      nodes: ["React Native", "Mobile App", "Hospitality"],
+      title: "Catering Kvatrić — Event Booking App",
+      desc: "Led frontend development of a cross-platform React Native app for a catering platform — letting clients browse venues, submit inquiries, and manage reservations, while staff handled operations from their phone with full role-based access.",
+      img: project7,
+    },
+    {
+      id: 8,
+      nodes: ["Chrome Extension", "Developer Tool", "Open Source"],
+      title: "Grid System — Layout Debugging Extension",
+      desc: "A Manifest V3 Chrome extension that overlays a customizable column grid on any live website — built for frontend developers and published on the Chrome Web Store with 4,000+ users and 5-star ratings.",
+      img: project8,
+    },
   ];
 
   return (
@@ -50,10 +87,10 @@ function Projects() {
         </p>
       </div>
 
-      {projectsData.map((project) => (
+      {/* 👇 SHOW BASED ON COUNT */}
+      {projectsData.slice(0, count).map((project) => (
         <div className="projects" key={project.id}>
           <div className="project1">
-            {/* LEFT */}
             <div className="project-details">
               {project.nodes.map((node, i) => (
                 <div className={`node${i + 1}`} key={i}>
@@ -67,7 +104,6 @@ function Projects() {
               <button>View Case Study →</button>
             </div>
 
-            {/* RIGHT */}
             <div className="project-img">
               <div className="img-container">
                 <img src={project.img} alt={project.title} />
@@ -76,8 +112,13 @@ function Projects() {
           </div>
         </div>
       ))}
-      <button className="view-more">
-        View More (4 more)
+
+      {/* BUTTON */}
+      <button
+        className="view-more"
+        onClick={() => setCount(count === 4 ? 8 : 4)}
+      >
+        {count === 4 ? "View More (more 4)" : "View Less"}
       </button>
     </section>
   );
