@@ -317,9 +317,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
 
 
 
-
-
-
 .tech-stack {
   width: 100%;
   padding: 100px 0;
@@ -358,19 +355,31 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   position: relative;
 }
 
-.cards-section-1,
-.cards-section-2 {
+/* TRACK (core fix) */
+.track {
   display: flex;
+  width: max-content;
   gap: 22px;
   padding: 18px 0;
-  animation: slide-left 22s linear infinite;
+  will-change: transform;
 }
 
-.cards-section-2 {
-  animation: slide-right 22s linear infinite;
+/* LEFT ROW */
+.track-left {
+  animation: scroll-left 30s linear infinite;
 }
 
-/* CARD STYLING */
+/* RIGHT ROW */
+.track-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+/* Pause on hover */
+.stack-cards:hover .track {
+  animation-play-state: paused;
+}
+
+/* CARD (unchanged design) */
 .card {
   display: flex;
   align-items: center;
@@ -386,25 +395,31 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   box-shadow:
     0 0 0 4px #fff,
     0 4px 16px rgba(0, 0, 0, 0.06);
-
 }
 
+/* IMAGE FIX */
 .card img {
   width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
 }
 
-.cards-section-1:hover,
-.cards-section-2:hover {
-  animation-play-state: paused;
+/* PERFECT LOOP ANIMATION */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-/* Animations */
 
-@keyframes slide-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes slide-right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

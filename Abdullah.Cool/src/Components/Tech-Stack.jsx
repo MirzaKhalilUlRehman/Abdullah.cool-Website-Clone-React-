@@ -55,23 +55,24 @@ function TechStack() {
       </div>
 
       <div className="stack-cards">
-        <div className="cards-section-1">
-          {stack1.map((item, index) => (
-            <div className="card" key={index}>
-              <img src={item.img} alt={item.name} />
-              <p>{item.name}</p>
-            </div>
-          ))}
-        </div>
+<div className="track track-left">
+  {[...stack1, ...stack1].map((item, index) => (
+    <div className="card" key={index}>
+      <img src={item.img} alt={item.name} />
+      <p>{item.name}</p>
+    </div>
+  ))}
+</div>
 
-        <div className="cards-section-2">
-          {stack2.map((item, index) => (
-            <div className="card" key={index}>
-              <img src={item.img} alt={item.name} />
-              <p>{item.name}</p>
-            </div>
-          ))}
-        </div>
+<div className="track track-right">
+  {[...stack2, ...stack2].map((item, index) => (
+    <div className="card" key={index}>
+      <img src={item.img} alt={item.name} />
+      <p>{item.name}</p>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );
