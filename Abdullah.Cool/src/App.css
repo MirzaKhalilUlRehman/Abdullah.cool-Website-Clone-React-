@@ -311,12 +311,6 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   transform: rotate(-30deg);
 }
 
-
-
-
-
-
-
 .tech-stack {
   width: 100%;
   padding: 100px 0;
@@ -324,6 +318,7 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   font-family: "Poppins", sans-serif;
 }
 
+/* ---- TEXT STYLING ---- */
 .stack-content p:first-child {
   color: #999999aa;
   font-size: 12px;
@@ -347,39 +342,65 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  margin-bottom: 10px;
+}
+.stack-cards::before,
+.stack-cards::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;          /* fade width */
+  height: 100%;
+  pointer-events: none;  /* hover does NOT affect scrolling */
+  z-index: 5;
 }
 
+.stack-cards::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(249, 249, 249, 0.545), #f9f9f900);
+}
+
+.stack-cards::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(249, 249, 249, 0.544), #f9f9f900);
+}
+
+/* ---- CARD TRACK WRAPPER ---- */
 .stack-cards {
   margin-top: 50px;
   overflow: hidden;
   position: relative;
 }
 
-/* TRACK (core fix) */
+/* ---- COMMON TRACK STYLE ---- */
 .track {
   display: flex;
   width: max-content;
   gap: 22px;
-  padding: 18px 0;
+  padding: 20px 0;
   will-change: transform;
 }
 
-/* LEFT ROW */
+/* ---- LEFT MOVING ROW ---- */
 .track-left {
   animation: scroll-left 30s linear infinite;
 }
 
-/* RIGHT ROW */
+/* ---- RIGHT MOVING ROW ---- */
 .track-right {
   animation: scroll-right 30s linear infinite;
 }
 
-/* Pause on hover */
-.stack-cards:hover .track {
+/* ---- INDEPENDENT HOVER-PAUSE ---- */
+.track-left:hover {
   animation-play-state: paused;
 }
 
-/* CARD (unchanged design) */
+.track-right:hover {
+  animation-play-state: paused;
+}
+
+/* ---- CARD STYLE ---- */
 .card {
   display: flex;
   align-items: center;
@@ -389,15 +410,15 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
-  transition: 0.3s ease;
   background: linear-gradient(to bottom, white, #f1f1f1);
   border: 1px solid rgba(0, 0, 0, 0.107);
   box-shadow:
     0 0 0 4px #fff,
     0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
 }
 
-/* IMAGE FIX */
+/* ---- ICON SIZE FIX ---- */
 .card img {
   width: 32px;
   height: 32px;
@@ -405,7 +426,9 @@ background: linear-gradient(to bottom, white, #f1f1f1);
   display: block;
 }
 
-/* PERFECT LOOP ANIMATION */
+
+
+/* ---- ANIMATIONS ---- */
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
