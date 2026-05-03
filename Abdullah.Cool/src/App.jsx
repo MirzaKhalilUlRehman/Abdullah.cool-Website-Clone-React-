@@ -6,6 +6,7 @@ import Services from "./Components/Services";
 import About from "./Components/About";
 import Process from "./Components/Process"  
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 import './App.css';
 import "./layout/basic.css";
 import "./layout/navbar.css";
@@ -25,6 +26,7 @@ function App() {
     <Services />
     <About />
     <Process />
+    <Contact />
     <Footer />
   </>   
 
