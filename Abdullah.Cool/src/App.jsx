@@ -5,6 +5,7 @@ import Projects from "./Components/Projects";
 import Services from "./Components/Services"; 
 import About from "./Components/About";
 import Process from "./Components/Process";
+import Testimonials from "./Components/Testimonials";
 import ContactME from "./Components/Contact-Me";  
 import Footer from "./Components/Footer";
 import './App.css';
@@ -26,6 +27,7 @@ function App() {
     <Services />
     <About />
     <Process />
+    <Testimonials />
     <ContactME/>
     <Footer />
   </>   
