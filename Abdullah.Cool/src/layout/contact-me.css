@@ -320,7 +320,7 @@ button:hover {
 }
 
 .contact-icons a:hover {
-  background: var(--text-orange-dark);
+  color: var(--text-orange-dark);
   border-color: var(--text-orange-dark);
 }
 
