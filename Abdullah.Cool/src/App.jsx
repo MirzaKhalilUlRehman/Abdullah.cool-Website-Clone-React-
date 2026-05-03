@@ -8,6 +8,7 @@ import Process from "./Components/Process";
 import Testimonials from "./Components/Testimonials";
 import ContactME from "./Components/Contact-Me";  
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 import './App.css';
 import "./layout/basic.css";
 import "./layout/navbar.css";
@@ -27,8 +28,12 @@ function App() {
     <Services />
     <About />
     <Process />
+<<<<<<< HEAD
     <Testimonials />
     <ContactME/>
+=======
+    <Contact />
+>>>>>>> 303c9ae10a9de05ad2ddde05fdaef89d2fc45f33
     <Footer />
   </>   
 
