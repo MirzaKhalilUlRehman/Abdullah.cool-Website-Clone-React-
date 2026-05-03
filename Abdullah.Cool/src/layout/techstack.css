@@ -1,0 +1,21 @@
+.tech-stack {
+  background: var(--bg-main);
+}
+
+.stack-content h2 {
+  color: var(--dark);
+}
+
+.stack-content h2 span {
+  color: var(--primary);
+}
+
+.stack-content p {
+  color: var(--text-light);
+}
+
+.card {
+  background: linear-gradient(to bottom, var(--white), var(--bg-soft));
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-ring), var(--shadow-main);
+}

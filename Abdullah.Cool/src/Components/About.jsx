@@ -1,3 +1,8 @@
+import { FaArrowRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 function About() {
   return (
     <section className="about-section">
@@ -35,8 +40,26 @@ function About() {
             someone who can own the full picture — I'm built for that.
           </p>
 
-          <button className="cta-btn">Let’s Work Together →</button>
+          <button className="cta-btn">Let’s Work Together <span className="work-icon about-icon">
+                <FaArrowRight /></span></button>
+                <div className="about-links">
+                  <div className="about-link">
+                    <span className="github-icon about-icon">
+                      <FaGithub />
+                    </span>
+                    <span className="linkedin-icon about-icon">
+                      <FaLinkedin />
+                    </span>
+                    <span className="twitter-icon about-icon">
+                      <FaXTwitter />
+                    </span>
+                    <span className="instagram-icon about-icon">
+                      <FaInstagram />
+                    </span>
+                  </div>
+                </div>
         </div>
+
 
         {/* RIGHT SIDE */}
         <div className="about-right">

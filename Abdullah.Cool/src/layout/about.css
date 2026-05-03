@@ -1,0 +1,27 @@
+.about-section {
+  background: var(--bg-section);
+}
+
+.about-container {
+  background: linear-gradient(135deg, var(--white), #fff7f3);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-ring), var(--shadow-main);
+}
+
+.about-text {
+  color: var(--text);
+}
+
+.muted {
+  color: var(--text-light);
+}
+
+.highlight-quote {
+  border-left: 3px solid var(--primary);
+  color: var(--primary);
+}
+
+.cta-btn {
+  background: var(--dark);
+  color: var(--white);
+}

@@ -840,8 +840,8 @@ body {
 
 .about-header p:first-child {
   color: #9a9a9a;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 16px;
 }
@@ -871,7 +871,6 @@ body {
   display: flex;
   justify-content: center;
   background: #f5f5f5;
-  
 }
 
 .about-container {
@@ -879,7 +878,7 @@ body {
   max-width: 1200px;
   display: flex;
   gap: 60px;
-  background: linear-gradient(135deg, #fff, #fff7f3);
+  background: white;
   padding: 60px;
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.107);
@@ -887,19 +886,20 @@ body {
     0 0 0 4px #fff,
     0 4px 16px rgba(0, 0, 0, 0.06);
 }
-.name{
+.name {
   text-decoration: underline;
   text-decoration-color: lab(64 53.13 69.31);
 }
 /* LEFT */
 .about-left {
-  flex: 1.3;
+  flex: 2;
 }
 
 .about-text {
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 18px;
+  line-height: 1.6;
   color: #444;
+  font-weight: 500;
   margin-bottom: 18px;
 }
 
@@ -929,11 +929,17 @@ body {
   margin-top: 20px;
   background: #111;
   color: white;
-  padding: 12px 20px;
-  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  padding: 16px 20px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 400;
+  margin-right: 15px;
 }
 
 /* RIGHT */
@@ -941,22 +947,46 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 /* STATS GRID */
 .stats-grid {
   display: grid;
+  min-width: 145px;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 10px;
 }
-
+.about-links {
+  position: relative;
+  right: -5%;
+  bottom: 50px;
+}
+.about-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.about-icon {
+  font-size: 18px;
+  padding: 10px 15px;
+  opacity: 0.8;
+  color: rgb(79, 78, 78);
+  border-radius: 8px;
+  border: 1px solid rgba(133, 132, 132, 0.23);
+}
+.work-icon {
+  font-size: 10px;
+  padding: 6px;
+}
 .stat-card {
   background: #fff;
   padding: 18px;
+  margin-right: 5px;
   border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  max-width: 160px;
 }
 
 .stat-card h2 {
@@ -966,7 +996,8 @@ body {
 }
 
 .stat-card p {
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 400;
   color: #666;
 }
 
@@ -974,6 +1005,7 @@ body {
 .side-box {
   background: #fff7f3;
   padding: 20px;
+  max-width: 300px;
   border-radius: 18px;
   border: 1px solid rgba(255, 106, 61, 0.2);
 }
@@ -1060,16 +1092,23 @@ body {
   padding: 30px;
   text-align: left;
   position: relative;
-  
+  overflow: hidden;
+
   background: linear-gradient(to bottom, white, #f1f1f1);
   border: 1px solid rgba(0, 0, 0, 0.107);
   box-shadow:
     0 0 0 4px #fff,
-    0 4px 16px rgba(0, 0, 0, 0.06);transition: 0.3s;
+    0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
-.process-card:hover {
-  transform: translateY(-6px);
+.process-card:hover .process-badge {
+  color: #ff6f14;
+  border-color: #ff6f14;
+}
+.process-card:hover .card-icon {
+  color: #ff6f14;
+  border-color: #ff6f14;
+  opacity: 0.8;
 }
 
 .process-badge {
@@ -1088,13 +1127,13 @@ body {
 .process-card h3 {
   font-size: 20px;
   color: #111827;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .process-desc {
   font-size: 14px;
   color: #6b7280;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .process-card ul {
@@ -1120,3 +1159,18 @@ body {
   left: 0;
   top: 8px;
 }
+
+/* ===== ICON STYLING ===== */
+
+.card-icon {
+  font-size: 150px;
+  font-weight: 200;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 140px;
+  height: 140px;
+  opacity: 0.05;
+}
+
+/* Different icons */

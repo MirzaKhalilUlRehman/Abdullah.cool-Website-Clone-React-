@@ -6,6 +6,14 @@ import Services from "./Components/Services";
 import About from "./Components/About";
 import Process from "./Components/Process"
 import './App.css';
+import "./layout/basic.css";
+import "./layout/navbar.css";
+import "./layout/hero.css";
+import "./layout/techstack.css";
+import "./layout/projects.css";
+import "./layout/services.css";
+import "./layout/about.css";
+import "./layout/process.css";
 function App() {
   return (
 <>
