@@ -8,7 +8,7 @@ import Process from "./Components/Process";
 import Testimonials from "./Components/Testimonials";
 import ContactME from "./Components/Contact-Me";  
 import Footer from "./Components/Footer";
-import Contact from "./Components/Contact";
+import ContactMe from "./Components/Contact-Me";
 import './App.css';
 import "./layout/basic.css";
 import "./layout/navbar.css";
@@ -30,7 +30,6 @@ function App() {
     <Process />
     <Testimonials />
     <ContactME/>
-    <Contact />
     <Footer />
   </>   
 
