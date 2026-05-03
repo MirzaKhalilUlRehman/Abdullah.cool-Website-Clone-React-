@@ -1,0 +1,1015 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-section {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+    top: 100px;
+    margin-bottom: 100px;
+    gap: 40px;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .data {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .hero-avtar {
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .projects {
+    width: 90%;
+  }
+
+  .project1 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .project-details {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-details p {
+    margin: 0 auto;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .services-container {
+    width: 90%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    margin: 0 20px;
+    gap: 40px;
+  }
+
+  .contact-card {
+    width: 90%;
+    height: auto;
+    top: 60px;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+
+  .testimonials-navigation {
+    width: 90%;
+  }
+
+  .contact-heading {
+    left: 0;
+    position: relative;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    width: 95%;
+    top: 15px;
+    height: 60px;
+    padding: 0 20px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .header .links {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .hero-section {
+    top: 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .book-call-btn,
+  .project-btn {
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+
+  .project-content h4 {
+    font-size: 40px;
+  }
+
+  .services-content h4 {
+    font-size: 36px;
+  }
+
+  .about-header h4 {
+    font-size: 36px;
+  }
+
+  .process-heading {
+    font-size: 36px;
+  }
+
+  .testimonial-heading {
+    font-size: 36px;
+  }
+
+  .service-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .service-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .service-right {
+    text-align: center;
+    width: 100%;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  .stats-grid {
+    justify-content: center;
+  }
+
+  .contactme-card {
+    margin: 0 20px;
+    padding: 30px;
+  }
+
+  .contactme-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contactme-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .process-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    top: 0;
+    border-radius: 0;
+    height: 55px;
+    padding: 0 16px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .btn button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .hero-section {
+    top: 60px;
+    margin-bottom: 60px;
+    padding: 25px 20px;
+    gap: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    margin: 15px 0;
+  }
+
+  .available {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .book-call-btn,
+  .project-btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .data {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .project-data,
+  .client-data,
+  .craft-data {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    text-align: center;
+    min-width: 100px;
+  }
+
+  .craft-data {
+    border-bottom: none;
+  }
+
+  .avtar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .avtar img {
+    width: 230px;
+    bottom: -70px;
+  }
+
+  .avtar-about {
+    width: 240px;
+    padding: 15px;
+  }
+
+  .stack-cards::before,
+  .stack-cards::after {
+    width: 60px;
+  }
+
+  .project-content h4 {
+    font-size: 32px;
+  }
+
+  .project-details h3 {
+    font-size: 28px;
+  }
+
+  .services-content h4 {
+    font-size: 32px;
+  }
+
+  .about-header h4 {
+    font-size: 32px;
+  }
+
+  .process-heading {
+    font-size: 32px;
+  }
+
+  .testimonial-heading {
+    font-size: 32px;
+  }
+
+  .service-row {
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .about-container {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .process-grid {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .process-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .contact-card {
+    top: 0;
+    padding: 30px 20px;
+  }
+
+  .contact-heading {
+    font-size: 24px;
+  }
+
+  .contact-bg-text {
+    font-size: 80px;
+  }
+
+  .testimonial-card {
+    padding: 25px;
+  }
+
+  .quote-mark {
+    font-size: 150px;
+    top: -30px;
+  }
+
+  .stars {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .slider-bar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tags {
+    grid-template-columns: repeat(2, max-content);
+    gap: 8px;
+  }
+
+  .stats-grid {
+    gap: 15px;
+  }
+
+  .stat-card {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 50px;
+    padding: 0 12px;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .btn button {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .btn button span {
+    display: none;
+  }
+
+  .hero-section {
+    top: 55px;
+    padding: 20px 15px;
+    gap: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    margin: 12px 0;
+  }
+
+  .available {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .book-call-btn,
+  .project-btn {
+    max-width: 240px;
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .project-data,
+  .client-data,
+  .craft-data {
+    font-size: 16px;
+    min-width: 80px;
+  }
+
+  .avtar {
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+  }
+
+  .avtar img {
+    width: 210px;
+    bottom: -60px;
+    right: -15px;
+  }
+
+  .avtar-about {
+    width: 220px;
+    padding: 12px;
+  }
+
+  .avtar-about h4 {
+    font-size: 14px;
+  }
+
+  .avtar-about p {
+    font-size: 11px;
+  }
+
+  .tech-stack {
+    padding: 40px 0;
+  }
+
+  .stack-content h2 {
+    font-size: 28px;
+  }
+
+  .stack-content p:last-child {
+    font-size: 12px;
+    padding: 0 15px;
+  }
+
+  .card {
+    padding: 8px 14px;
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .card img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .project-section {
+    padding: 50px 0;
+  }
+
+  .project-content h4 {
+    font-size: 24px;
+  }
+
+  .project-details h3 {
+    font-size: 22px;
+  }
+
+  .project-details p {
+    font-size: 13px;
+  }
+
+  .node1,
+  .node2,
+  .node3 {
+    font-size: 10px;
+    padding: 4px 10px;
+    margin-right: 6px;
+  }
+
+  .img-container {
+    padding: 20px;
+  }
+
+  .services-section {
+    padding: 50px 0;
+  }
+
+  .services-content h4 {
+    font-size: 24px;
+  }
+
+  .services-content p {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  .service-text h3 {
+    font-size: 18px;
+  }
+
+  .service-text p {
+    font-size: 12px;
+  }
+
+  .tags span {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .service-number {
+    font-size: 50px;
+    right: -20px;
+    bottom: -40px;
+  }
+
+  .about-section {
+    padding: 50px 0;
+  }
+
+  .about-header h4 {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    padding: 12px 16px;
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-card {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .process-section {
+    padding: 50px 15px;
+  }
+
+  .process-heading {
+    font-size: 28px;
+  }
+
+  .process-subtext {
+    font-size: 13px;
+  }
+
+  .process-card {
+    padding: 20px;
+  }
+
+  .process-card h3 {
+    font-size: 18px;
+  }
+
+  .process-desc {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .contact-section {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .contact-card {
+    padding: 25px 15px;
+  }
+
+  .contact-heading {
+    font-size: 20px;
+    margin: 15px auto;
+  }
+
+  .contact-badge {
+    font-size: 10px;
+  }
+
+  .contact-email {
+    font-size: 11px;
+  }
+
+  .contact-bg-text {
+    font-size: 50px;
+  }
+
+  .contact-icons {
+    gap: 10px;
+  }
+
+  .contact-icons a {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .contactme-wrapper {
+    padding: 40px 15px;
+  }
+
+  .contactme-main-title {
+    font-size: 24px;
+  }
+
+  .contactme-title {
+    font-size: 20px;
+  }
+
+  .contactme-subtitle {
+    font-size: 12px;
+  }
+
+  .contactme-btn {
+    height: 48px;
+    font-size: 12px;
+  }
+
+  .testimonial-section {
+    padding: 50px 15px;
+  }
+
+  .testimonial-heading {
+    font-size: 28px;
+  }
+
+  .testimonial-subtext {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-title {
+    font-size: 16px;
+  }
+
+  .testimonial-text {
+    font-size: 12px;
+  }
+
+  .quote-mark {
+    font-size: 100px;
+    top: -20px;
+  }
+
+  .testimonials-navigation {
+    bottom: -50px;
+    height: auto;
+    padding: 12px;
+  }
+
+  .arrows button {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .avtar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .avtar img {
+    width: 190px;
+    bottom: -50px;
+  }
+
+  .avtar-about {
+    width: 200px;
+  }
+
+  .project-content h4 {
+    font-size: 22px;
+  }
+
+  .services-content h4 {
+    font-size: 22px;
+  }
+
+  .about-header h4 {
+    font-size: 24px;
+  }
+
+  .process-heading {
+    font-size: 24px;
+  }
+
+  .testimonial-heading {
+    font-size: 24px;
+  }
+
+  .tags {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .tags span {
+    text-align: center;
+    width: 100%;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .data {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .book-call-btn,
+  .project-btn {
+    max-width: 220px;
+    padding: 8px 14px;
+  }
+
+  .avtar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .avtar img {
+    width: 180px;
+    bottom: -45px;
+  }
+
+  .avtar-about {
+    width: 190px;
+  }
+
+  .project-data,
+  .client-data,
+  .craft-data {
+    font-size: 14px;
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    height: auto;
+    min-height: auto;
+    gap: 20px;
+  }
+
+  .hero-avtar {
+    margin-top: 10px;
+  }
+
+  .avtar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .avtar img {
+    width: 190px;
+    bottom: -50px;
+  }
+
+  .contact-section {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .process-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .process-card {
+    width: calc(50% - 20px);
+  }
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  button,
+  .btn button,
+  .mobile-nav-toggle,
+  .book-call-btn,
+  .project-btn,
+  .contact-icons a,
+  .arrows button,
+  .view-more,
+  .cta-btn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button:active,
+  .btn button:active,
+  .mobile-nav-toggle:active,
+  .book-call-btn:active,
+  .project-btn:active {
+    transform: scale(0.96);
+    transition: transform 0.1s ease;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section,
+  .services-container,
+  .contact-card,
+  .testimonial-card,
+  .contactme-card,
+  .projects,
+  .process-card {
+    background-attachment: scroll;
+  }
+}
+
+.header {
+  z-index: 1000;
+}
+
+.links a.active,
+.mobile-menu .links a.active {
+  color: #ff6f14;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+  position: relative;
+}
+
+.hamburger {
+  width: 25px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 999;
+  padding: 100px 30px 40px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  display: block;
+  transform: translateX(0);
+}
+
+.mobile-menu .links {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.mobile-menu .links a {
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.mobile-menu .links a:hover,
+.mobile-menu .links a.active {
+  color: #ff6f14;
+}
+
+.mobile-menu .btn {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mobile-menu .btn button {
+  padding: 14px 28px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.menu-overlay.active {
+  display: block;
+}

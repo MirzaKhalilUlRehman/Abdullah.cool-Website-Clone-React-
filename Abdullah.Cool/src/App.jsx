@@ -18,6 +18,7 @@ import "./layout/projects.css";
 import "./layout/services.css";
 import "./layout/about.css";
 import "./layout/process.css";
+import "./layout/responsive.css";
 function App() {
   return (
 <>
