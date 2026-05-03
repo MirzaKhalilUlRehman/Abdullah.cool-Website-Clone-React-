@@ -28,12 +28,9 @@ function App() {
     <Services />
     <About />
     <Process />
-<<<<<<< HEAD
     <Testimonials />
     <ContactME/>
-=======
     <Contact />
->>>>>>> 303c9ae10a9de05ad2ddde05fdaef89d2fc45f33
     <Footer />
   </>   
 
