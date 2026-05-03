@@ -1,21 +1,124 @@
+/* tech-stack.css */
 .tech-stack {
-  background: var(--bg-main);
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.stack-content p:first-child {
+  color: #999999aa;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .stack-content h2 {
-  color: var(--dark);
+  color: lab(8 0.59 -12.28);
+  font-size: 50px;
+  font-weight: 700;
+  margin: 24px 0;
 }
 
 .stack-content h2 span {
-  color: var(--primary);
+  color: lab(65 53.77 69.98);
 }
 
-.stack-content p {
-  color: var(--text-light);
+.stack-content p:last-child {
+  color: var(--text-light-gray);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.stack-cards::before,
+.stack-cards::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.stack-cards::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(249, 249, 249, 0.545), #f9f9f900);
+}
+
+.stack-cards::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(249, 249, 249, 0.544), #f9f9f900);
+}
+
+.stack-cards {
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 22px;
+  padding: 20px 0;
+  will-change: transform;
+}
+
+.track-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.track-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+.track-left:hover {
+  animation-play-state: paused;
+}
+
+.track-right:hover {
+  animation-play-state: paused;
 }
 
 .card {
-  background: linear-gradient(to bottom, var(--white), var(--bg-soft));
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 18px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  background: linear-gradient(to bottom, white, #f1f1f1);
   border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-ring), var(--shadow-main);
+  box-shadow: var(--shadow-white), var(--shadow-card);
+  transition: 0.3s ease;
+}
+
+.card img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

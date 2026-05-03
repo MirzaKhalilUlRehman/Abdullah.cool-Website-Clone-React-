@@ -1,23 +1,70 @@
+/* header.css */
 .header {
-  background: linear-gradient(to bottom, var(--white), var(--bg-soft));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 65px;
+  padding: 0 24px;
+  position: fixed;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 22px;
+  z-index: 1;
+  background: var(--gradient-header);
   border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-ring), var(--shadow-main);
+  box-shadow: var(--shadow-white), var(--shadow-card);
+}
+
+.logo img {
+  width: 80px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
 }
 
 .links a {
-  color: var(--text-muted);
+  text-decoration: none;
+  color: var(--text-gray);
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.3s;
 }
 
 .links a:hover {
-  color: var(--black);
+  color: var(--text-black);
 }
 
 .btn button {
-  background-color: var(--black);
-  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: var(--bg-dark);
+  color: var(--bg-gray);
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .icon-box {
-  color: var(--white);
-  border: 1px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 2px;
+  opacity: 0.8;
 }

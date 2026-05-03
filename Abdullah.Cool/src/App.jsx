@@ -10,12 +10,14 @@ import ContactME from "./Components/Contact-Me";
 import Footer from "./Components/Footer";
 import ContactMe from "./Components/Contact-Me";
 import './App.css';
-import "./layout/basic.css";
 import "./layout/navbar.css";
 import "./layout/hero.css";
 import "./layout/techstack.css";
 import "./layout/projects.css";
 import "./layout/services.css";
+import "./layout/contact-me.css";
+import "./layout/footer.css";
+import "./layout/testimonials.css"
 import "./layout/about.css";
 import "./layout/process.css";
 import "./layout/responsive.css";
