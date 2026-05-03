@@ -4,7 +4,8 @@ import TechStack from "./Components/Tech-Stack";
 import Projects from "./Components/Projects";
 import Services from "./Components/Services"; 
 import About from "./Components/About";
-import Process from "./Components/Process"  
+import Process from "./Components/Process";
+import ContactME from "./Components/Contact-Me";  
 import Footer from "./Components/Footer";
 import './App.css';
 import "./layout/basic.css";
@@ -25,6 +26,7 @@ function App() {
     <Services />
     <About />
     <Process />
+    <ContactME/>
     <Footer />
   </>   
 
