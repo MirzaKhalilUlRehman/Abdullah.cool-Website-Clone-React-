@@ -48,7 +48,7 @@
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow-white), var(--shadow-card);
   overflow: hidden;
-}
+} 
 
 .service-row {
   display: flex;
@@ -136,7 +136,7 @@
 .service-number {
   position: absolute;
   right: -50px;
-  bottom: -90px;
+  bottom: -75px;
   font-size: 80px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.05);
@@ -174,7 +174,7 @@
 .tags {
   display: grid;
   text-align: left;
-  align-items: last baseline;
+  align-items:  baseline;
   grid-template-columns: repeat(3, max-content);
   gap: 8px;
   justify-content: end;

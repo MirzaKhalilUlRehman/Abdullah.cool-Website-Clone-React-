@@ -28,7 +28,28 @@
 }
 
 body {
+  cursor: none;
   position: relative;
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-body);
-}
+}         .cursor-dot {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background: var(--text-orange-dark);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* Simple cursor ring */
+        .cursor-ring {
+            position: fixed;
+            width: 35px;
+            height: 35px;
+            border: 1.5px solid var(--text-orange-dark);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 2;
+            background: transparent;
+        }
