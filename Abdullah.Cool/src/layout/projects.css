@@ -73,7 +73,7 @@
   margin-bottom: 10px;
   font-weight: 600;
   position: relative;
-  top: -40px;
+  top: -60px !important;
 }
 
 .node1 {

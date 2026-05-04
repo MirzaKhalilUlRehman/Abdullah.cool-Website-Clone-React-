@@ -141,7 +141,7 @@
   width: 1px;
   height:530px;
   position: relative;
-  top: -30px;
+  top: -30px ;
   left: -25px;
   background: rgba(129, 127, 127, 0.295);
 }
@@ -158,16 +158,14 @@
 }
 .avtar:hover img{
     transform:scale(1.08);
-
-
 }
 
 .avtar img {
   width: 280px;
   border-radius: 12px;
   position: absolute;
-  bottom: -70px;
-  right: 5px;
+  bottom: 0px !important;
+  right: 5px !important;
 }
 
 .avtar-about {

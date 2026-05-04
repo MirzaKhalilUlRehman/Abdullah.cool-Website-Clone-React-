@@ -39,7 +39,7 @@ body {
             background: var(--text-orange-dark);
             border-radius: 50%;
             pointer-events: none;
-            z-index: 2;
+            z-index: 10;
         }
 
         /* Simple cursor ring */
@@ -50,6 +50,6 @@ body {
             border: 1.5px solid var(--text-orange-dark);
             border-radius: 50%;
             pointer-events: none;
-            z-index: 2;
+            z-index: 10;
             background: transparent;
         }

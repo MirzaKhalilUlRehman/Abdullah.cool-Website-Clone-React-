@@ -1,3 +1,9 @@
+/* ============================================
+   COMPLETE RESPONSIVE CSS
+   Fixed Positioning for All Devices
+   ============================================ */
+
+/* ----- BASE RESET ----- */
 * {
   margin: 0;
   padding: 0;
@@ -22,11 +28,13 @@ img {
   display: block;
 }
 
+/* ----- TABLET & DESKTOP BREAKPOINTS (1200px) ----- */
 @media (max-width: 1200px) {
   .header {
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
+    position: fixed;
   }
 
   .hero-section {
@@ -39,6 +47,7 @@ img {
     top: 100px;
     margin-bottom: 100px;
     gap: 40px;
+    position: relative;
   }
 
   .hero-content {
@@ -51,14 +60,37 @@ img {
     margin-right: auto;
   }
 
-  .buttons {
-    justify-content: center;
-    gap: 15px;
+  .avtar {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .avtar img {
+    left: 0;
+    position: relative;
+  }
+
+  .avtar-about {
+    width: 400px;
+    margin: 0 auto;
   }
 
   .data {
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .brd {
+    display: none;
+  }
+
+  .buttons {
+    justify-content: center;
+    gap: 15px;
   }
 
   .hero-avtar {
@@ -71,6 +103,7 @@ img {
 
   .projects {
     width: 90%;
+    margin: 0 auto;
   }
 
   .project1 {
@@ -91,8 +124,31 @@ img {
     width: 100%;
   }
 
+  .node1,
+  .node2,
+  .node3 {
+    top: -10px;
+    right: auto;
+    left: 0;
+    position: relative;
+    display: inline-block;
+  }
+
+  .side-box {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .services-container {
     width: 90%;
+    margin: 0 auto;
+  }
+
+  .contactme-btn {
+    padding: 15px;
+    align-items: center;
   }
 
   .about-container {
@@ -104,15 +160,19 @@ img {
   .contact-card {
     width: 90%;
     height: auto;
-    top: 60px;
+    top: 0;
+    position: relative;
+    margin: 0 auto;
   }
 
   .testimonial-card {
     width: 90%;
+    margin: 0 auto;
   }
 
   .testimonials-navigation {
     width: 90%;
+    margin: 0 auto;
   }
 
   .contact-heading {
@@ -122,12 +182,14 @@ img {
   }
 }
 
+/* ----- LAPTOP / SMALL DESKTOP (992px) ----- */
 @media (max-width: 992px) {
   .header {
     width: 95%;
     top: 15px;
     height: 60px;
     padding: 0 20px;
+    position: fixed;
   }
 
   .logo img {
@@ -144,6 +206,7 @@ img {
 
   .hero-section {
     top: 80px;
+    position: relative;
   }
 
   .hero-content h1 {
@@ -226,6 +289,7 @@ img {
   }
 }
 
+/* ----- TABLET (768px) ----- */
 @media (max-width: 768px) {
   .header {
     width: 100%;
@@ -233,6 +297,10 @@ img {
     border-radius: 0;
     height: 55px;
     padding: 0 16px;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    transform: none;
   }
 
   .logo img {
@@ -249,6 +317,10 @@ img {
     margin-bottom: 60px;
     padding: 25px 20px;
     gap: 30px;
+    position: relative;
+    left: 0;
+    transform: none;
+    width: 100%;
   }
 
   .hero-content h1 {
@@ -285,6 +357,9 @@ img {
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 15px;
+    position: relative;
+    left: 0;
+    justify-content: center;
   }
 
   .project-data,
@@ -302,18 +377,26 @@ img {
   }
 
   .avtar {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .avtar img {
-    width: 230px;
+    width: 280px;
     bottom: -70px;
+    left: 0;
+    right: 0;
+    position: relative;
+    margin: 0 auto;
   }
 
   .avtar-about {
-    width: 240px;
+    width: 280px;
     padding: 15px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .stack-cards::before,
@@ -363,15 +446,19 @@ img {
   .process-card {
     width: 100%;
     max-width: 400px;
+    margin: 0 auto;
   }
 
   .contact-card {
     top: 0;
     padding: 30px 20px;
+    position: relative;
+    margin: 0 auto;
   }
 
   .contact-heading {
     font-size: 24px;
+    text-align: center;
   }
 
   .contact-bg-text {
@@ -380,6 +467,7 @@ img {
 
   .testimonial-card {
     padding: 25px;
+    margin: 0 auto;
   }
 
   .quote-mark {
@@ -400,21 +488,167 @@ img {
   .tags {
     grid-template-columns: repeat(2, max-content);
     gap: 8px;
+    justify-content: center;
   }
 
   .stats-grid {
     gap: 15px;
+    justify-content: center;
   }
 
   .stat-card {
     text-align: center;
   }
+
+  /* Mobile nav toggle active state */
+  .mobile-nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 6;
+    position: relative;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: 8;
+    padding: 100px 30px 40px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+  }
+
+  .mobile-menu.active {
+    display: block;
+    transform: translateX(0);
+  }
+
+  .mobile-menu .links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .mobile-menu .links a {
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+  }
+
+  .mobile-menu .links a:hover,
+  .mobile-menu .links a.active {
+    color: #ff6f14;
+  }
+
+  .mobile-menu .btn {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 7;
+  }
+
+  .menu-overlay.active {
+    display: block;
+  }
 }
 
+/* ----- MOBILE LANDSCAPE (max-width: 768px, orientation: landscape) ----- */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    height: auto;
+    min-height: auto;
+    gap: 20px;
+  }
+
+  .hero-avtar {
+    margin-top: 10px;
+  }
+
+  .avtar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .avtar img {
+    width: 220px;
+    bottom: -50px;
+  }
+
+  .contact-section {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .process-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .process-card {
+    width: calc(50% - 20px);
+  }
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ----- SMALL MOBILE (576px) ----- */
 @media (max-width: 576px) {
   .header {
     height: 50px;
     padding: 0 12px;
+    position: fixed;
   }
 
   .logo img {
@@ -434,6 +668,7 @@ img {
     top: 55px;
     padding: 20px 15px;
     gap: 25px;
+    position: relative;
   }
 
   .hero-content h1 {
@@ -466,20 +701,24 @@ img {
   }
 
   .avtar {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     padding: 15px;
+    margin: 0 auto;
   }
 
   .avtar img {
-    width: 210px;
+    width: 230px;
     bottom: -60px;
-    right: -15px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
   }
 
   .avtar-about {
-    width: 220px;
+    width: 240px;
     padding: 12px;
+    margin: 0 auto;
   }
 
   .avtar-about h4 {
@@ -536,6 +775,10 @@ img {
     font-size: 10px;
     padding: 4px 10px;
     margin-right: 6px;
+    position: relative;
+    top: 0;
+    right: auto;
+    display: inline-block;
   }
 
   .img-container {
@@ -572,6 +815,7 @@ img {
     font-size: 50px;
     right: -20px;
     bottom: -40px;
+    position: absolute;
   }
 
   .about-section {
@@ -616,6 +860,7 @@ img {
 
   .process-card {
     padding: 20px;
+    margin: 0 auto;
   }
 
   .process-card h3 {
@@ -634,11 +879,13 @@ img {
 
   .contact-card {
     padding: 25px 15px;
+    margin: 0 auto;
   }
 
   .contact-heading {
     font-size: 20px;
     margin: 15px auto;
+    text-align: center;
   }
 
   .contact-badge {
@@ -655,6 +902,7 @@ img {
 
   .contact-icons {
     gap: 10px;
+    justify-content: center;
   }
 
   .contact-icons a {
@@ -699,6 +947,7 @@ img {
 
   .testimonial-card {
     padding: 20px;
+    margin: 0 auto;
   }
 
   .testimonial-title {
@@ -726,23 +975,24 @@ img {
   }
 }
 
+/* ----- EXTRA SMALL (400px) ----- */
 @media (max-width: 400px) {
   .hero-content h1 {
     font-size: 22px;
   }
 
   .avtar {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
   }
 
   .avtar img {
-    width: 190px;
+    width: 210px;
     bottom: -50px;
   }
 
   .avtar-about {
-    width: 200px;
+    width: 220px;
   }
 
   .project-content h4 {
@@ -784,6 +1034,7 @@ img {
   }
 }
 
+/* ----- VERY SMALL (320px) ----- */
 @media (max-width: 320px) {
   .hero-content h1 {
     font-size: 20px;
@@ -796,17 +1047,17 @@ img {
   }
 
   .avtar {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
 
   .avtar img {
-    width: 180px;
+    width: 190px;
     bottom: -45px;
   }
 
   .avtar-about {
-    width: 190px;
+    width: 200px;
   }
 
   .project-data,
@@ -817,48 +1068,7 @@ img {
   }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
-  .hero-section {
-    height: auto;
-    min-height: auto;
-    gap: 20px;
-  }
-
-  .hero-avtar {
-    margin-top: 10px;
-  }
-
-  .avtar {
-    width: 160px;
-    height: 160px;
-  }
-
-  .avtar img {
-    width: 190px;
-    bottom: -50px;
-  }
-
-  .contact-section {
-    height: auto;
-    padding: 40px 0;
-  }
-
-  .process-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .process-card {
-    width: calc(50% - 20px);
-  }
-
-  .buttons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
+/* ----- TOUCH FRIENDLY (active states for mobile) ----- */
 @media (max-width: 768px) {
   button,
   .btn button,
@@ -889,6 +1099,7 @@ img {
   }
 }
 
+/* ----- PERFORMANCE: SCROLL BACKGROUND FIX ----- */
 @media (max-width: 768px) {
   .hero-section,
   .services-container,
@@ -901,8 +1112,9 @@ img {
   }
 }
 
+/* ----- HEADER ACTIVE LINK STYLES (global) ----- */
 .header {
-  z-index: 1000;
+  z-index: 5;
 }
 
 .links a.active,
@@ -910,106 +1122,156 @@ img {
   color: #ff6f14;
 }
 
-.mobile-nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  z-index: 1001;
-  position: relative;
+/* ----- Additional responsive helpers (images, flex, containers) ----- */
+@media (max-width: 992px) {
+  .container,
+  .main-wrapper {
+    overflow-x: hidden;
+  }
 }
 
-.hamburger {
-  width: 25px;
-  height: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.hamburger span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3s ease;
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
-
-.mobile-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: white;
-  z-index: 999;
-  padding: 100px 30px 40px;
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  overflow-y: auto;
-}
-
-.mobile-menu.active {
+/* ensures images never overflow */
+img {
+  max-width: 100%;
+  height: auto;
   display: block;
-  transform: translateX(0);
 }
 
-.mobile-menu .links {
+/* responsive tables / grids base */
+.responsive-grid {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.mobile-menu .links a {
-  font-size: 22px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #333;
-  transition: 0.3s;
+@media (max-width: 768px) {
+  .responsive-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.mobile-menu .links a:hover,
-.mobile-menu .links a.active {
-  color: #ff6f14;
-}
+/* ----- FIXED POSITIONING CORRECTIONS FOR ALL SCREENS ----- */
 
-.mobile-menu .btn {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.mobile-menu .btn button {
-  padding: 14px 28px;
-  font-size: 16px;
+/* Fix for elements with left: 110px that was causing issues */
+.avtar img {
+  position: relative;
+  left: 0 ;
+  right: 0 ;
   margin: 0 auto;
 }
 
-.menu-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 998;
+/* Fix for .data element positioning */
+.data {
+  position: relative ;
+  left: 0 ;
+  right: 0 ;
+  margin: 0 auto;
 }
 
-.menu-overlay.active {
-  display: block;
+/* Fix for .side-box */
+.side-box {
+  position: relative ;
+  left: 0 ;
+  right: 0 ;
+  margin: 0 auto;
+  width: 100% ;
+}
+
+/* Fix for .brd on tablets */
+.brd {
+  display: none;
+}
+
+/* Fix for nodes positioning */
+.node1, .node2, .node3 {
+  position: relative ;
+  top: 0 ;
+  right: auto ;
+  left: 0 ;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Fix for hero-avtar */
+.hero-avtar {
+  position: relative ;
+  top: 0 ;
+  right: 0 ;
+}
+
+/* Fix for contact-card positioning */
+.contact-card {
+  position: relative ;
+  top: 0 ;
+  margin: 20px auto;
+}
+
+/* Fix for contact-heading */
+.contact-heading {
+  position: relative ;
+  left: 0 ;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Fix for service-number on mobile */
+.service-number {
+  position: absolute;
+  right: -20px;
+  bottom: -40px;
+}
+
+@media (max-width: 768px) {
+  .service-number {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  /* Fix service-left for mobile */
+  .service-left {
+    position: relative ;
+    flex-direction: column;
+  }
+  
+  /* Fix all absolute positioned elements */
+  [style*="position: absolute"],
+  [style*="position:absolute"] {
+    position: relative ;
+  }
+}
+
+/* Ensure all containers are properly centered on mobile */
+@media (max-width: 768px) {
+  .projects,
+  .services-container,
+  .about-container,
+  .process-grid,
+  .testimonial-card,
+  .contact-card,
+  .contactme-card {
+    margin-left: auto ;
+    margin-right: auto ;
+  }
+  
+  /* Fix any left positioning that causes overflow */
+  [class*="left"]:not(.header) {
+    left: 0 ;
+  }
+  
+  /* Fix any right positioning */
+  [class*="right"] {
+    right: 0 ;
+  }
+  
+  /* Center all flex containers */
+  .flex-container,
+  .buttons,
+  .data {
+    justify-content: center ;
+    align-items: center ;
+  }
 }
